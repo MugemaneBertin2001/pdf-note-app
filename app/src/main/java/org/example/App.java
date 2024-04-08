@@ -14,7 +14,6 @@ public class App {
         bookshelf.switchDisplayMode(DisplayMode.LIST);
         bookshelf.displayBooks();
 
-        // Simulate opening a book and adding a page with annotations
         Book book = bookshelf.openBook(1);
         if (book != null) {
             Page page = new Page(1);
@@ -22,7 +21,6 @@ public class App {
             page.addStickyNote(stickyNote);
             book.addPage(page);
 
-            // Example of navigating to a page and seeing annotations
             System.out.println("Navigating to page " + page.getPageNumber() + " with annotations."+ page.getAnnotations()+"");
         } else {
             System.out.println("Book not found.");

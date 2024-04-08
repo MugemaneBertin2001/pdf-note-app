@@ -25,4 +25,8 @@ public abstract class Annotation {
     public void setColor(String color) {
         this.color = color;
     }
+
+    public abstract Object getText();
+
+    public abstract Integer getX();
 }
